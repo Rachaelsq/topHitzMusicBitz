@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*  */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+}
+/* this --mainBlue is the syntax needed to save a color as a variable for easier use */
+:root {
+  --mainBlue:#2a2a72;
+  --greyBackground:#141414
+}
+
+/* end css reset \\\\\\\\\\\\\\ */
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+.App {
+  text-align: center;
+}
+
+body,html {
+  /* background-color: #141414; */
+  background: var(--greyBackground) !important;
+  color: white!important;
+  font-family: 'Bebas Neue', cursive!important;
+  /* important used here to override bootstrap font*/
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #81f7e5;
+  border: none;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px #888888;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#navbar {
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.text-title {
+display: flex;
+justify-content: center;
+align-content: center;
+margin-top: 50px;
+font-family: 'Bebas Neue', cursive!important;
+letter-spacing: 3px;
+}
+
+.jumbotron {
+background-image: url('https://images.unsplash.com/photo-1529176601319-48a49e19725c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+min-height: 100vh;
+/* fix the image width or make the jumbotron not fluid so that it doesnt need to repeat */
+color: white;
+}

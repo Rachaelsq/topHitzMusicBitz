@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import bootstrap from "bootstrap/dist/css/bootstrap.min.css"; 
+// import bootstrap from "bootstrap/dist/css/bootstrap.min.css"; 
 
 // import * as serviceWorker from "./serviceWorker";  
 

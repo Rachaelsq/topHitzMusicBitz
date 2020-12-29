@@ -6,14 +6,15 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {ProductProvider} from './context'
 // import * as serviceWorker from "./serviceWorker";  
 
 
 ReactDOM.render(
-    <Router>
-        <App />
-    </Router>
-,document.getElementById('root')
+    <ProductProvider>
+        <Router>
+            <App />
+        </Router>
+    </ProductProvider>, 
+    document.getElementById('root')
 );
-
-

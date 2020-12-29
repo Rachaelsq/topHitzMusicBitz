@@ -50,6 +50,7 @@ ol, ul {
 }
 /* this --mainBlue is the syntax needed to save a color as a variable for easier use */
 :root {
+  --info:#17A2B8;
   --mainBlue:#2a2a72;
   --greyBackground:#141414
 }
@@ -76,24 +77,15 @@ body,html {
   margin-bottom: 10px;
 }
 
-button {
-  background-color: #81f7e5;
-  border: none;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 2px 2px #888888;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-}
 
 #navbar {
 display: flex;
 justify-content: center;
 align-content: center;
+}
+
+.navbar-brand {
+  margin-top: 20px;
 }
 
 .text-title {

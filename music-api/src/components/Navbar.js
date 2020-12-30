@@ -5,20 +5,17 @@ import styled from 'styled-components'
 import {ButtonContainer} from './Button';
 
 
-
-
-
 export default class Navbar extends Component {
     render() {
         return (
             <NavWrapper className="navbar navbar-expand-sm navbar-dark">
                 <Link to="/">
-                    <img src={sparkle} alt="store" className="navbar-brand"/>
+                    <img src={sparkle} alt="home" className="navbar-brand"/>
                 </Link>
 
                 <ul className="navbar-nav">
                     <li className="nav-item ml-5">
-                        <Link to="/" className="nav-link">
+                        <Link to="/genrepage" className="nav-link">
                             genres
                         </Link>
                     </li>
@@ -26,7 +23,7 @@ export default class Navbar extends Component {
 
                 <ul className="navbar-nav">
                     <li className="nav-item ml-5">
-                        <Link to="/" className="nav-link">
+                        <Link to="/productlist" className="nav-link">
                             products
                         </Link>
                     </li>
@@ -46,7 +43,9 @@ export default class Navbar extends Component {
 //styled component
 
 const NavWrapper = styled.nav`
-background: var(--info);
+background: rgb(138,22,220, 0.5);
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 padding 0 0;
 padding-right: 15px;
 max-height: 70px;

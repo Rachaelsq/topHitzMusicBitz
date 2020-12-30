@@ -1,42 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/*  */
 *,
 *::before,
 *::after {
@@ -71,10 +32,7 @@ body,html {
   color: white!important;
   font-family: 'Bebas Neue', cursive!important;
   /* important used here to override bootstrap font*/
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+ 
 }
 
 
@@ -99,7 +57,28 @@ letter-spacing: 3px;
 
 .jumbotron {
 background-image: url('https://images.unsplash.com/photo-1529176601319-48a49e19725c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-min-height: 100vh;
+max-width: 100vw;
+height: 80vh;
+text-align: center;
+
 /* fix the image width or make the jumbotron not fluid so that it doesnt need to repeat */
 color: white;
+}
+
+#bootstrapButton {
+  font-size: 40px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+#jumbotronParagraph {
+  font-size: 35px;
+}
+
+#homeTitle {
+  font-size: 80px!important;
 }

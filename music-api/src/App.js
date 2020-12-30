@@ -9,6 +9,8 @@ import Details from "./components/Details";
 import Cart from "./components/Cart";
 import Default from "./components/Default";
 import Product from './components/Product';
+import GenrePage from './components/GenrePage';
+import HomePage from './HomePage'
 //mine
 // import {ButtonContainer} from './Button'
 
@@ -20,33 +22,19 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Switch>
-          <Route exact path="/" component={ProductList} />
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/productList" component={ProductList} />
           <Route exact path="/details" component={Details} />
+          <Route exact path="/genrepage" component={GenrePage} />
           <Route exact path="/cart" component={Cart} />
           <Route component={Default} />
         </Switch>
       <div>  
       <h1>  
-Top Hitz      </h1>  
+Top Hitz   footer app.js   </h1>  
 
 
 
-      <div>  
-        
-        <button type="button" className="btn btn-secondary rounded-0">  
-          Secondary  
-        </button>  
-        <button type="button" className="btn btn-light rounded-0">  
-          Light  
-        </button>  
-        <button type="button" className="btn btn-info rounded-0">  
-          info  
-        </button>  
-
-        <button type="button" className="btn btn-dark rounded-0">  
-          Dark  
-        </button>  
-      </div>  
     </div> 
 
 

@@ -17,6 +17,7 @@ import HomePage from './HomePage'
 
 
 
+
 function App() {
   return (
     <React.Fragment>
@@ -26,7 +27,6 @@ function App() {
           <Route exact path="/productList" component={ProductList} />
           <Route exact path="/details" component={Details} />
           <Route exact path="/genrepage" component={GenrePage} />
-          <Route exact path="/cart" component={Cart} />
           <Route component={Default} />
         </Switch>
       <div>  
